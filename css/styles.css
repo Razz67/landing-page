@@ -46,7 +46,7 @@ a {
 /* In case users browser !support background-blend-mode */
 @supports (background-blend-mode: multiply) {
   .hero {
-    background-image: url("../images/bucketHat.jpg"),
+    background-image: url("../images/bucketHat.png"),
       radial-gradient(#444, #111);
     background-attachment: fixed;
     background-repeat: no-repeat;
