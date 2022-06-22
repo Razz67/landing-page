@@ -12,6 +12,12 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  width: 85%;
+  max-width: 81.25em;
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -24,14 +30,32 @@ p {
   margin: 0;
 }
 
+section {
+  padding: 3em 0;
+}
+
 a {
   text-decoration: none;
 }
 
-.spacer > * + * {
+.spacer>*+* {
   margin-top: 1.5rem;
 }
 
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.split>* {
+  flex-basis: 30%;
+  min-width: 10em;
+}
+
+
+/* Header Section */
 .hero {
   display: flex;
   margin: 0 auto;
@@ -51,7 +75,6 @@ a {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-    background-position: center cemter;
   }
 }
 
@@ -85,20 +108,56 @@ a {
 .page-subtitle {
   font-size: 0.85em;
 }
-.container {
-  width: 85%;
-  max-width: 81.25em;
-  margin: 0 auto;
-}
-
-.spacing {
-  display: flex;
-  gap: 1em;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
 .section-title {
   text-align: center;
-  font-size:  clamp(2.5rem, 5vw + 1, 4rem);
+  font-size: clamp(2.5rem, 5vw + 1, 4rem);
+  line-height: 1;
+  color: #17353d;
+  margin-bottom: 2.5rem;
+}
+
+
+/* Featured Products Section */
+.featured-section {
+  background: #eee;
+}
+
+.featured-item {
+  display: block;
+  position: relative;
+  transform: scale(.85);
+  transition: transform 250ms ease-in-out;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.featured-item:hover,
+.featured-item:focus {
+  transform: scale(1);
+}
+
+/* Circle behind hats */
+.featured-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 100% 100% 0 0;
+  border-radius: 50%;
+  background: #2193b0;
+  z-index: -1;
+}
+
+.price {
+  display: block;
+  font-weight: 700;
+  font-size: 0.95em;
+}
+
+/* Product Section */
+.product-section {
+  
 }
