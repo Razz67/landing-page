@@ -13,8 +13,9 @@
 
   <!-- Style Sheets -->
   <link href="css/styles.css" rel="stylesheet">
-
 </head>
+<body>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
 <main>
   <header class="hero" id="header">
@@ -58,42 +59,54 @@
 
     <section class="product-section" id="product">
       <div class="container">
-        <h2 class="section-title">Our Hatzz</h2>
-        <div class="split">
+        <h2 class="section-title"><span class="white">Our Hatzz</span></h2>
 
-          <article class="product spacer">
-            <img src="images/hat2.png" class="product-img" alt="">
-            <h3 class="product-title"></h3>
-            <p class="product-description"></p>
-            <a href="" class="btn"></a>
+          <article class="product hat2 spacer">
+            <img src="images/hat2.png" class="product-img" alt="Zig Zag Hat">
+            <h3 class="product-title">Zig Zag</h3>
+            <p class="product-description">Customizable emroidered hatzz</p>
+            <a href="" class="btn">Buy Now</a>
           </article>
 
 
-          <article class="product spacer">
-            <img src="images/hat4.png" class="product-img" alt=""></img>
-            <h3 class="product-title"></h3>
-            <p class="product-description"></p>
-            <a href="#" class="btn"></a>
+          <article class="product hat4 spacer">
+            <img src="images/hat4.png" class="product-img" alt="Custom hat"></img>
+            <h3 class="product-title">Custom1</h3>
+            <p class="product-description">Customizable printed snap-back hatzz</p>
+            <a href="#" class="btn">Buy Now</a>
           </article>
 
-          <article class="product spacer">
-            <img src="images/bucketHat.png" class="product-img" alt="">
-            <h3 class="product-title"></h3>
-            <p class="product-description"></p>
-            <a href="#" class="btn"></a>
+          <article class="product buckethat spacer">
+            <img src="images/bucketHat.png" class="product-img" alt="Bucket Hat">
+            <h3 class="product-title">Bucket Hatzz</h3>
+            <p class="product-description">A great hat</p>
+            <a href="#" class="btn">Buy Now</a>
           </article>
         </div>
     </section>
 
+    <!-- ON Sale Section -->
+
     <section class="sale-section" id="sale">
       <div class="container">
-        <h2 class="section-title">On Sale</h2>
-        <img src="images/12streeters.png" class="product-img" alt="">
-        <h3 class="product-title"></h3>
-        <p class="product-description"></p>
-        <a href="#" class="btn"></a>
-
-      </div>
+        <h2 class="section-title">On <span class="highlight">Sale</span> Now</h2>
+        
+        <div class="split">
+          <a href="#" class="sale-item">
+            <img src="images/dallas1.png" alt="Dallas Cowboy hat" class="featured-img">
+            <p class="feature-text"><span class="price">$9.99</span>Pack II</p>
+          </a>
+        
+          <a href="#" class="sale-item">
+            <img src="images/dallas2.png" alt="" class="featured-img">
+            <p class="feature-text"><span class="price">$9.99</span>Sideline Home</p>
+          </a>
+        
+          <a href="#" class="sale-item">
+            <img src="images/dallas3.png" alt="" class="featured-img">
+            <p class="feature-text"><span class="price">$9.99</span>A-Frame 9Fifty</p>
+          </a>
+        </div>
       </div>
     </section>
   </main>

@@ -12,6 +12,26 @@ body {
   overflow-x: hidden;
 }
 
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 99;
+  font-size: 1.02em;
+  border: none;
+  outline: none;
+  background-color: #069400;
+  cursor: pointer;
+  padding: 0.85em;
+  border-radius: 4px;
+  color: #fff;
+}
+
+#topBtn:hover {
+  background-color: cornflowerblue;
+}
+
 .container {
   width: 85%;
   max-width: 81.25em;
@@ -49,7 +69,7 @@ a {
   justify-content: center;
 }
 
-.split>* {
+.split > * {
   flex-basis: 30%;
   min-width: 10em;
 }
@@ -111,7 +131,7 @@ a {
 
 .section-title {
   text-align: center;
-  font-size: clamp(2.5rem, 5vw + 1, 4rem);
+  font-size: 2rem;
   line-height: 1;
   color: #17353d;
   margin-bottom: 2.5rem;
@@ -147,7 +167,7 @@ a {
   left: 0;
   padding: 100% 100% 0 0;
   border-radius: 50%;
-  background: #2193b0;
+  background:  rgba(0, 212, 255, 1);
   z-index: -1;
 }
 
@@ -158,6 +178,44 @@ a {
 }
 
 /* Product Section */
+.white {
+  color: #fff;
+}
+
 .product-section {
-  
+  background-color: #333;
+}
+.product {
+  /* www.cssgradient.io */
+  background: rgb(174, 203, 238);
+    background: -moz-radial-gradient(circle, rgba(174, 203, 238, 0.804435152967437) 0%, rgba(148, 233, 149, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(174, 203, 238, 0.804435152967437) 0%, rgba(148, 233, 149, 1) 100%);
+    background: radial-gradient(circle, rgba(174, 203, 238, 0.804435152967437) 0%, rgba(148, 233, 149, 1) 100%);
+  padding: 3em;
+  border-radius: 3em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  color: #fff;
+  /* www.thml-css-js.com/css/generator/text-shadow.com */
+  text-shadow: 2px 2px #069400;
+  line-height: 1.1;
+  margin: 0;
+}
+
+
+
+/* Sale Section */
+.sale-item {
+  display: block;
+  position: relative;
+  transform: scale(.85);
+  transition: transform 250ms ease-in-out;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  line-height: 1.3;
 }
