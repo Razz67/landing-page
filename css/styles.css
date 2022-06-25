@@ -267,6 +267,9 @@ footer {
     float: right;
     margin: 1.3em;
   }
+  .contact-container h2 {
+    font-size: 3.5em;
+  }
 
   small {
     display: inline-block;
