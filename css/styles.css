@@ -254,6 +254,8 @@ li {
 footer {
   text-align: center;
   margin-bottom: 1.5em;
+  padding: 1em;
+  font-size: 0.75em;
 }
 
 #topBtn:hover {
@@ -267,6 +269,7 @@ footer {
     float: right;
     margin: 1.3em;
   }
+
   .contact-container h2 {
     font-size: 3.5em;
   }
