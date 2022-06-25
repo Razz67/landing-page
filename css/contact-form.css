@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* Contact section */
+.contact-container div,
+textarea,
+input {
+    box-sizing: border-box;
+}
+
+.contact-container h1 {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 2.5em;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 0.1em 0;
+    padding: 0 0 0.4em 0;
+    text-transform: uppercase;
+}
+
+.contact-container h3 {
+    font-size: 1.2em;
+    margin: 1em 0 0.4em 0;
+}
+
+.contact-container {
+    max-width: 95em;
+    min-width: 20.25em;
+    margin: 0 auto;
+    font-size: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    padding: 1.5em 2.5em;
+    background: url("../images/12streeters.png"),
+        radial-gradient(rgba(0, 212, 255, 0.3), #333);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+form {
+    max-width: 100%;
+    display: block;
+}
+
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+form li {
+    margin: 0 0 0.25em 0;
+    clear: both;
+    display: inline-block;
+    width: 100%;
+}
+
+form li:last-child {
+    margin: 0;
+}
+
+form li:last-child p {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+label {
+    display: block;
+    margin: 0 0 0.5em 0;
+    color: #fff;
+    font-size: 1em;
+}
+
+input {
+    margin: 0 0 0.5em 0;
+    border: 1px solid #ccc;
+    padding: 0.375em 0.625em;
+    color: rgb(169, 169, 169);
+    font-size: 1em;
+}
+
+.divider {
+    margin: 0.5em 0 0.5em 0;
+    border: 0;
+    height: 1em;
+    width: 100%;
+    display: block;
+    color: #4f6fad;
+    background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+
+.required {
+    color: #ee9cb4;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    padding: 0.375em, 0.625em;
+    width: 100%;
+    color: rgb(169, 169, 169);
+}
+
+small {
+    color: #4f6fad;
+    margin: 0 0 0 0.5em;
+}
+
+.submit-btn {
+    font-size: 1.0625em;
+    border-bottom-color: #111;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.74em;
+    margin: 1.5em 0 0;
+    color: #fff;
+    border: none;
+    border-bottom: 0.1325em;
+    background-color: #4f6fad;
+}
+
+.submit-btn:hover {
+    background-color: aqua;
+    color: #111;
+}
+
+@media (min-width: 37.5em) and (max-width: 100em) {
+    .contact-container {
+        text-align: center;
+    }
+
+    .right,
+    p {
+        float: none;
+        clear: both;
+    }
+
+    .left {
+        float: none;
+    }
+
+    textarea {
+        width: 50%;
+    }
+}
+
+

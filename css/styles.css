@@ -1,3 +1,7 @@
+@import url(contact-form.css);
+
+
+
 *,
 *::before,
 *::after {
@@ -234,21 +238,6 @@ li {
   color: #333;
   text-align: center;
   line-height: 1.3;
-}
-
-/* Contact section */
-.contact {
-  /* background-color: aqua; */
-}
-
-@supports (background-blend-mode: multiply) {
-  .contact {
-    background-image: url("../images/12streeters.png"),
-      radial-gradient(rgba(0, 212, 255, 0.5), #111);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-  }
 }
 
 /* Scroll Button To Top Of Page */
