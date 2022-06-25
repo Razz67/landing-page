@@ -22,7 +22,7 @@
     <div class="container">
       <h1 class="page-title">Datt'z Hatzz</h1>
       <p class="page-subtitle">Raise your game, bring the heat, and go hard!</p>
-      
+
       <nav class="nav-bar">
         <ul id="menu"></ul>
       </nav>
@@ -109,8 +109,8 @@
     <section class="contact section" id="contact" data-nav="Contact Us">
       <div class="contact-container">
         <!-- <div class="row header"> -->
-          <h1>Contact Us &nbsp;</h1>
-          <h3>Fill out the form below!</h3>
+        <h2>Contact Us</h2>
+        <h3>Fill out the form below!</h3>
         <!-- </div> -->
 
         <div class="row body">
@@ -118,20 +118,20 @@
             <ul>
               <li>
                 <p class="left">
-                  <label for="first-name">first name</label>
-                  <input type="text" name="first-name" placeholder="Razz" />
+                  <label id="firstName" for="first-name">first name</label>
+                  <input type="text" id="first-name" name="first-name" placeholder="Razz" />
                 </p>
 
                 <p class="right">
-                  <label for="last-name">last name</label>
-                  <input type="text" name="last-name" placeholder="Razzberry" />
+                  <label id="lastName" for="last-name">last name</label>
+                  <input type="text" id="last-name" name="last-name" placeholder="Razzberry" />
                 </p>
               </li>
 
               <li>
                 <p>
-                  <label for="email">email <span class="required">*</span></label>
-                  <input type="email" name="email" placeholder="itsme.me@me.com" />
+                  <label id="email" for="my-email">email <span class="required">*</span></label>
+                  <input type="email" id="my-email" name="email" placeholder="itsme.me@me.com" />
                 </p>
               </li>
 
@@ -140,8 +140,8 @@
               </li>
 
               <li>
-                <label for="comment">comments</label>
-                <textarea cols="45" rows="3" name="comments"></textarea>
+                <label id="comments" for="comment">comments</label>
+                <textarea cols="45" rows="3" id="comment" name="comments"></textarea>
               </li>
 
               <li>
@@ -153,6 +153,10 @@
         </div>
       </div>
     </section>
+
+    <footer>
+      <p>Datt Razz Media &copy; 2022 All rights reserved</p>
+    </footer>
   </main>
 
   <script src="js/app.js"></script>
