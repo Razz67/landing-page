@@ -1,0 +1,27 @@
+/* Media Queries */
+@media (max-width: 37.5em) {
+    .nav-bar {
+        margin: 1.3em;
+    }
+
+    .navigation ul {
+        gap: 1.4em;
+    }
+
+    .contact-container h2 {
+        font-size: 3.5em;
+    }
+
+    small {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 37.5261em) {
+    .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.4em;
+        margin-top: 5em;
+    }
+}

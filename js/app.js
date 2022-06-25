@@ -8,7 +8,7 @@ const nav_menu_items = () => {
   sections.forEach((section) => {
     const sectionID = section.id;
     const sectionAtrribute = section.dataset.nav;
-    nav_container += `<li> <a class="hero-btn" href="#${sectionID}">${sectionAtrribute}</a></li>`;
+    nav_container += `<li> <a class="nav-btn" href="#${sectionID}">${sectionAtrribute}</a></li>`;
   });
   menu.innerHTML = nav_container;
 };
