@@ -77,7 +77,6 @@ li {
 
 .hero-btn {
   display: flex;
-  justify-content: flex-end;
   align-content: center;
   display: inline-block;
   padding: 0.5em 0.5em;
@@ -87,7 +86,6 @@ li {
   font-size: 0.75em;
   border-radius: 0.25em;
   background-color: rgba(0, 212, 255, 0.5);
-  margin-bottom: 1.5rem;
 }
 
 .hero-btn:hover,
@@ -253,7 +251,6 @@ li {
 }
 
 
-@media screen and (max-width: 600px) {}
 
 @media screen and (min-width: 600px) {
   .hero-btn {
