@@ -263,8 +263,8 @@ footer {
     float: right;
     margin: 1.3em;
   }
+
   small {
-        display: inline-block;
+    display: inline-block;
   }
 }
-
