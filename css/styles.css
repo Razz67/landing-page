@@ -88,6 +88,10 @@ li {
   background-color: rgba(0, 212, 255, 0.5);
 }
 
+.hero-btn:not(last-child) {
+  margin-bottom: 1.3em;
+}
+
 .hero-btn:hover,
 .hero-btn:focus {
   transform: scale(0.9);
