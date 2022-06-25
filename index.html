@@ -14,104 +14,100 @@
   <!-- Style Sheets -->
   <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
   <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
-<main>
-  <header class="hero" id="header">
-    <div class="container spacer">
-      <h1 class="page-title">Datt'z Hatzz</h1>
-      <p class="page-subtitle">Raise your game, bring the heat, and go hard!</p>
-      <nav class="nav-bar">
-        <a class="hero-btn" href="#featured">Featured</a>
-        <a class="hero-btn" href="#product">Our Hatzz</a>
-        <a class="hero-btn" href="#sale">On Sale</a>
-      </nav>
-  </header>
-
-  <main>
-    <!-- Hat images are from www.lids.com & www.opentip.com -->
-    <section class="featured-section" id="featured">
+    <header class="hero" id="header">
       <div class="container">
-        <h2 class="section-title">Featured Hatzz</h2>
-
-        <div class="split">
-          <a href="https://www.lids.com/nfl-dallas-cowboys/dallas-cowboys-new-era-color-pack-ii-59fifty-fitted-hat-gray/o-2438+t-47605773+p-04719016772+z-9-898713446?_ref=p-DLP:m-GRID:i-r1c1:po-4"
-            class="featured-item">
-            <img src="images/dallas1.png" alt="Dallas Cowboy hat" class="featured-img">
-            <p class="feature-text"><span class="price">$39.99</span>Pack II</p>
-          </a>
-
-          <a href="https://www.lids.com/nfl-dallas-cowboys/dallas-cowboys-new-era-2021-nfl-sideline-home-59fifty-fitted-hat-navy/o-1350+t-14820217+p-26912383711+z-9-3009044458?_ref=p-DLP:m-GRID:i-r10c2:po-32"
-            class="featured-item">
-            <img src="images/dallas2.png" alt="" class="featured-img">
-            <p class="feature-text"><span class="price">$32.99</span>Sideline Home</p>
-          </a>
-
-          <a href="https://www.lids.com/nfl-dallas-cowboys/dallas-cowboys-new-era-a-frame-9fifty-snapback-trucker-hat-navy/o-2438+t-36596828+p-26930161944+z-9-104053383?_ref=p-DLP:m-GRID:i-r23c1:po-70"
-            class="featured-item">
-            <img src="images/dallas3.png" alt="" class="featured-img">
-            <p class="feature-text"><span class="price">$39.99</span>A-Frame 9Fifty</p>
-          </a>
+        <h1 class="page-title">Datt'z Hatzz</h1>
+        <p class="page-subtitle">Raise your game, bring the heat, and go hard!</p>
+        <nav class="nav-bar">
+          <ul id="menu"></ul>
+        </nav>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <section class="product-section" id="product">
-      <div class="container">
-        <h2 class="section-title"><span class="white">Our Hatzz</span></h2>
+    <main>
+      <!-- Hat images are from www.lids.com & www.opentip.com -->
+      <section class="featured-section section" id="featured" data-nav="Featured">
+        <div class="container">
+          <h2 class="section-title">Featured Hatzz</h2>
 
-          <article class="product hat2 spacer">
-            <img src="images/hat2.png" class="product-img" alt="Zig Zag Hat">
-            <h3 class="product-title">Zig Zag</h3>
-            <p class="product-description">Customizable emroidered hatzz</p>
-            <a href="" class="btn">Buy Now</a>
-          </article>
+          <div class="split">
+            <a href="https://www.lids.com/nfl-dallas-cowboys/dallas-cowboys-new-era-color-pack-ii-59fifty-fitted-hat-gray/o-2438+t-47605773+p-04719016772+z-9-898713446?_ref=p-DLP:m-GRID:i-r1c1:po-4"
+              class="featured-item">
+              <img src="images/dallas1.png" alt="Dallas Cowboy hat" class="featured-img">
+              <p class="feature-text"><span class="price">$39.99</span>Pack II</p>
+            </a>
 
+            <a href="https://www.lids.com/nfl-dallas-cowboys/dallas-cowboys-new-era-2021-nfl-sideline-home-59fifty-fitted-hat-navy/o-1350+t-14820217+p-26912383711+z-9-3009044458?_ref=p-DLP:m-GRID:i-r10c2:po-32"
+              class="featured-item">
+              <img src="images/dallas2.png" alt="" class="featured-img">
+              <p class="feature-text"><span class="price">$32.99</span>Sideline Home</p>
+            </a>
 
-          <article class="product hat4 spacer">
-            <img src="images/hat4.png" class="product-img" alt="Custom hat"></img>
-            <h3 class="product-title">Custom1</h3>
-            <p class="product-description">Customizable printed snap-back hatzz</p>
-            <a href="#" class="btn">Buy Now</a>
-          </article>
-
-          <article class="product buckethat spacer">
-            <img src="images/bucketHat.png" class="product-img" alt="Bucket Hat">
-            <h3 class="product-title">Bucket Hatzz</h3>
-            <p class="product-description">A great hat</p>
-            <a href="#" class="btn">Buy Now</a>
-          </article>
+            <a href="https://www.lids.com/nfl-dallas-cowboys/dallas-cowboys-new-era-a-frame-9fifty-snapback-trucker-hat-navy/o-2438+t-36596828+p-26930161944+z-9-104053383?_ref=p-DLP:m-GRID:i-r23c1:po-70"
+              class="featured-item">
+              <img src="images/dallas3.png" alt="" class="featured-img">
+              <p class="feature-text"><span class="price">$39.99</span>A-Frame 9Fifty</p>
+            </a>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- ON Sale Section -->
-
-    <section class="sale-section" id="sale">
-      <div class="container">
-        <h2 class="section-title">On <span class="highlight">Sale</span> Now</h2>
-        
-        <div class="split">
-          <a href="#" class="sale-item">
-            <img src="images/dallas1.png" alt="Dallas Cowboy hat" class="featured-img">
-            <p class="feature-text"><span class="price">$9.99</span>Pack II</p>
-          </a>
-        
-          <a href="#" class="sale-item">
-            <img src="images/dallas2.png" alt="" class="featured-img">
-            <p class="feature-text"><span class="price">$9.99</span>Sideline Home</p>
-          </a>
-        
-          <a href="#" class="sale-item">
-            <img src="images/dallas3.png" alt="" class="featured-img">
-            <p class="feature-text"><span class="price">$9.99</span>A-Frame 9Fifty</p>
-          </a>
+      <section class="product-section section" id="product" data-nav="product">
+        <div class="container">
+          <h2 class="product-section-title">Our Hatzz</h2>
+      
+          <div class="split">
+            <a href="" class="product-item">
+              <img src="images/hat4.png" alt="New era hat" class="product-img">
+              <p class="product-text">New Era Blank</p>
+            </a>
+      
+            <a href="https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_4636000/altimages/ff_4636205-ce0f55e1b6f1a35f2066alt1_full.jpg&w=900"
+              class="product-item">
+              <img src="images/hat2.png" alt="Cookies Hat" class="product-img">
+              <p class="product-text">Cookies Original</p>
+            </a>
+      
+            <a href="https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_3664000/altimages/ff_3664388-b48ed95a4cce014767e0alt1_full.jpg&w=900" class="product-item">
+              <img src="images/hat1.png" alt="Camo hat" class="product-img">
+              <p class="product-text">Original Camo</p>
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+      <!-- On Sale Section -->
 
-  <script src="js/app.js"></script>
-  </body>
+      <section class="sale-section section" id="sale" data-nav="On Sale">
+        <div class="container">
+          <h2 class="section-title">On <span class="highlight">Sale</span> Now</h2>
+
+          <div class="split">
+            <a href="#" class="sale-item">
+              <img src="images/dallas1.png" alt="Dallas Cowboy hat" class="featured-img">
+              <p class="feature-text"><span class="price">$9.99</span>Pack II</p>
+            </a>
+
+            <a href="#" class="sale-item">
+              <img src="images/dallas2.png" alt="" class="featured-img">
+              <p class="feature-text"><span class="price">$9.99</span>Sideline Home</p>
+            </a>
+
+            <a href="#" class="sale-item">
+              <img src="images/dallas3.png" alt="" class="featured-img">
+              <p class="feature-text"><span class="price">$9.99</span>A-Frame 9Fifty</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" data-nav="Contact Us"></section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
 
 </html>

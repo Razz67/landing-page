@@ -1,3 +1,20 @@
+// Navigation
+const menu = document.getElementById("menu");
+const sections = [...document.querySelectorAll(".section")];
+
+const nav_menu_items = () => {
+  let nav_container = "";
+
+  sections.forEach((section) => {
+    const sectionID = section.id;
+    const sectionAtrribute = section.dataset.nav;
+    nav_container += `<li> <a class="hero-btn" href="#${sectionID}">${sectionAtrribute}</a></li>`;
+  });
+  menu.innerHTML = nav_container;
+};
+nav_menu_items();
+
+// Scroll To Top Button
 var topBtn = document.getElementById("topBtn");
 // Show button when user scrolls down 100px
 window.onscroll = function () {
@@ -5,9 +22,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (
-    document.body.scrollTop > 75 ||
-    document.documentElement.scrollTop > 75) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     topBtn.style.display = "block";
   } else {
     topBtn.style.display = "none";
@@ -16,8 +31,12 @@ function scrollFunction() {
 
 // Scroll to top when button clicked
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  //
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 }
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
