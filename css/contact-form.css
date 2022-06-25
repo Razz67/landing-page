@@ -113,6 +113,7 @@ textarea {
 small {
     color: #4f6fad;
     margin: 0 0 0 0.5em;
+    display: none;
 }
 
 .submit-btn {
