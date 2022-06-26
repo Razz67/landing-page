@@ -14,6 +14,13 @@ const nav_menu_items = () => {
 };
 nav_menu_items();
 
+// Active Links
+for (let i = 0; i < document.links.length; i++) {
+  if (document.links[i].href === document.URL) {
+    document.links[i].className = "active";
+  }
+}
+
 // Scroll To Top Button
 var topBtn = document.getElementById("topBtn");
 // Show button when user scrolls down 100px
@@ -47,3 +54,5 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+
